@@ -1,7 +1,6 @@
 <div align="center">
   <a href="https://www.youtube.com/channel/UCMwVTLZIRRUyyVrkjDpn4pA">
-    <img alt="AI Agents Masterclass" src="https://i.imgur.com/8Gr2pBA.png">
-    <h1 align="center">AI Agents Masterclass</h1>
+    <h1 align="center">AI Agents</h1>
   </a>
 </div>
 
@@ -15,7 +14,6 @@
 
 <p align="center" style="margin-top: 25px">
   <a href="#what-are-ai-agents"><strong>What are AI Agents?</strong></a> ·
-  <a href="#how-this-repo-works"><strong>How this Repo Works</strong></a> ·
   <a href="#instructions-to-follow-along"><strong>Instructions to Follow Along</strong></a>
 </p>
 <br/>
@@ -39,42 +37,27 @@ Below is a very basic diagram just to get an idea of what an AI agent looks like
 
 <br/>
 
-## How this Repo Works
-
-Each week there will be a new video for my AI Agents Masterclass! Each video will have its own folder
-in this repo, starting with [/1-first-agent/](/1-first-agent) for the first video in the masterclass
-where I create our very first AI agent! 
-
-Any folder that starts with a number is for a masterclass video. The other folders are for other content
-on my YouTube channel. The other content goes very well with the masterclass series (think of it as
-supplemental material) which is why it is here too!
-
-The code in each folder will be exactly what I used/created in the accompanying masterclass video.
-
-<br/>
-
 ## Instructions to Follow Along
 
 The below instructions assume you already have Git, Python, and Pip installed. If you do not, you can install
 [Python + Pip from here](https://www.python.org/downloads/) and [Git from here](https://git-scm.com/).
 
-To follow along with any of my videos, first clone this GitHub repository, open up a terminal,
-and change your directory to the folder for the current video you are watching (example: 1st video is [/1-first-agent/](/1-first-agent)).
-
+First clone this GitHub repository, open up a terminal,
+and change your directory to the folder.
 The below instructions work on any OS - Windows, Linux, or Mac!
 
-You will need to use the environment variables defined in the .env.example file in the folder (example for the first video: [`1-first-agent/.env.example`](/1-first-agent/.env.example)) to set up your API keys and other configuration. Turn the .env.example file into a `.env` file, and supply the necessary environment variables.
+You will need to use the environment variables defined in the .env.example file in the folder to set up your API keys and other configuration. Turn the .env.example file into a `.env` file, and supply the necessary environment variables.
 
-After setting up the .env file, run the below commands to create a Python virtual environment and install the necessary Python packages to run the code from the masterclass. Creating a virtual environment is optional but recommended! Creating a virtual environment for the entire masterclass is a one time thing. Make sure to run the pip install for each video though!
+After setting up the .env file, run the below commands to create a Python virtual environment and install the necessary Python packages to run the code. Creating a virtual environment is optional but recommended. Make sure to run the pip install for each video though!
 
 ```bash
-python -m venv ai-agents-masterclass
+python -m venv asana-task-agent
 
 # On Windows:
-.\ai-agents-masterclass\Scripts\activate
+.\asana-task-agent\Scripts\activate
 
 # On MacOS/Linux: 
-source ai-agents-masterclass/bin/activate
+source asana-task-agent/bin/activate
 
 cd 1-first-agent (or whichever folder)
 pip install -r requirements.txt
